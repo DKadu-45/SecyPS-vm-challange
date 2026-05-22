@@ -24,7 +24,7 @@ imm16 = B | (C << 8)   [little-endian]
 
 | Opcode | Mnemonic         | Fields       | Operation                                    |
 |--------|-----------------|--------------|----------------------------------------------|
-| `0x00` | `RET`            | —            | next_PC = pop32(SP); SP+=4                   |
+| `0x00` | `RET`            | —            | next_PC = pop32(SP); SP+=4; Returns from subroutine|
 | `0x01` | `SUB  Ra, Rb`    | A=Ra, B=Rb   | Ra = Ra − Rb; update ZF, SF                 |
 | `0x02` | `JZ   imm16`     | imm16        | if ZF==1: PC = imm16                         |
 | `0x03` | `MOV  Ra, imm16` | A=Ra, imm16  | Ra = imm16                                   |
