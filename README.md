@@ -1,6 +1,6 @@
 # PClub VM Challenge
 
-I have make use of my spring camp's knowledge.
+I have make use of my spring camp's knowledge in finding ISA and errors in challanges however most of code especially of dbg.c is written by gemini.
 
 ## Build
 
